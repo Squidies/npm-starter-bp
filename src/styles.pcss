@@ -1,0 +1,55 @@
+/**
+ * Styles.pcss
+ */
+
+/* concatinate modular CSS */
+@import 'css/_vars.pcss';
+
+body {
+  /* native CSS Custom Properties */
+  background: var(--default-color-bg);
+  color: var(--default-color-text);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  /* nested element selectors */
+  & p {
+    color: var(--color-danger);
+
+    /* deeply nested selectors */
+    &.info-text {
+      color: var(--color-confirm) !important;
+    }
+  }
+
+  /* nested @media queries */
+  @media (min-width: 800px) {
+    & p {
+      color: var(--default-color-text);
+    }
+  }
+}
+
+h1 {
+  color: var(--color-danger);
+}
+
+/* combine like @media queries into single MQ */
+@media (min-width: 800px) {
+  p {
+    color: var(--default-color-text);
+  }
+}
+
+@media (min-width: 800px) {
+  h1 {
+    color: var(--default-color-text)
+  }
+}
+
+.icon {
+  max-width: 50px;
+}
