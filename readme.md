@@ -2,9 +2,20 @@
 ---
 npm-starter-bp is an easy to understand, easy to modify boilerplate for building templates.
 
+#### Install
+*\* node.js required*
+
+`$ cd npm-starter-bp`
+
+`$ npm i`
+
+`$ npm run dev`
+
+
 #### Commands
   * `npm run dev` || `npm run build:dev` - build assets and run a local development server for hot-reloading
   * `npm run prod` || `npm run build:prod` - build and minify assets.
+  * *single-task commands can be found in package.json -- {scripts}*
 
 #### CSS
 ---
@@ -24,3 +35,7 @@ npm-starter-bp is an easy to understand, easy to modify boilerplate for building
     * [rollup-plugin-node-resolve](https://github.com/rollup/rollup-plugin-node-resolve): locate 3rd party modules in `node_modules` folder for use
     * [rollup-plugin-replace](https://github.com/rollup/rollup-plugin-replace): x-platform ENV variables for rollup
     * [rollup-plugin-uglify](https://github.com/TrySound/rollup-plugin-uglify): javascript minification
+
+#### IMAGE
+---
+  * [svgo](https://github.com/svg/svgo): optimize SVG images
