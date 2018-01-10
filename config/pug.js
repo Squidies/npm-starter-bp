@@ -10,7 +10,8 @@ fs.readdir('src/pug', function(err, files) {
     let file_path = 'src/pug/' + file
     fs.stat(file_path, function(error, stat) {
       if(stat.isFile()) {
-        let outfile = './'+file.slice(0, -4)+'.html'
+        // let outfile = './'+file.slice(0, -4)+'.html'
+        let outfile = path.parse(file).name + '.html'
         let html = pug.renderFile(file_path, {pretty: true})
         fs.writeFileSync(outfile, html);
         console.log('Processed: '+file_path+'\n       --> '+outfile)
