@@ -17,6 +17,10 @@ npm-starter-bp is an easy to understand, easy to modify boilerplate for building
   * `npm run prod` || `npm run build:prod` - build and minify assets.
   * *single-task commands can be found in package.json -- {scripts}*
 
+#### HTML
+---
+  * [Pugjs](https://pugjs.org): translate Pug.js templates into html files.
+
 #### CSS
 ---
   * [PostCSS](https://github.com/postcss/postcss)
