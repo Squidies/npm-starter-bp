@@ -25,12 +25,12 @@ if(process.env.NODE_ENV === 'production') {
   plugins.push(cssnano)
 }
 
-fs.readFile('src/styles.pcss', (err, css) => {
+fs.readFile('src/styles.css', (err, css) => {
 
     if (err) throw err
 
     postcss(plugins)
-      .process(css, { from: 'src/styles.pcss', to: 'dest/styles.css' })
+      .process(css, { from: 'src/styles.css', to: 'dest/styles.css' })
       .then(result => {
           fs.writeFile('dest/styles.css', result.css)
           if ( result.map ) fs.writeFile('dest/styles.css.map', result.map)

@@ -1,9 +1,9 @@
 /**
- * Styles.pcss
+ * Styles.css
  */
 
 /* concatinate modular CSS */
-@import 'css/_vars.pcss';
+@import 'css/_vars.css';
 
 body {
   /* native CSS Custom Properties */

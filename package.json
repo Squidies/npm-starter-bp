@@ -17,7 +17,7 @@
     "rollupjs:prod": "cross-env NODE_ENV=production rollup -c ./config/rollup.config.js",
     "svgo": "svgo -f ./src/svg -o ./dest/img",
     "watch:svg": "onchange \"./src/svg/**/*.svg\" -- npm run svgo",
-    "watch:css": "onchange \"./src/**/*.pcss\" -- npm run postcss",
+    "watch:css": "onchange \"./src/**/*.css\" -- npm run postcss",
     "watch:js": "onchange \"./src/**/*.js\" -- npm run rollupjs",
     "watch:all": "npm-run-all -p watch:svg watch:css watch:js bs",
     "watch": "npm-run-all -p watch:svg watch:css watch:js bs"
