@@ -2,6 +2,9 @@ const fs = require('fs')
 const path = require('path')
 const pug = require('pug')
 
+const options = {
+  pretty: !(process.env.NODE_ENV === 'production') // pretty format if not production
+}
 
 
 fs.readdir('src/pug', function(err, files) {
@@ -12,7 +15,7 @@ fs.readdir('src/pug', function(err, files) {
       if(stat.isFile()) {
         // let outfile = './'+file.slice(0, -4)+'.html'
         let outfile = path.parse(file).name + '.html'
-        let html = pug.renderFile(file_path, {pretty: true})
+        let html = pug.renderFile(file_path, options)
         fs.writeFileSync(outfile, html);
         console.log('Processed: '+file_path+'\n       --> '+outfile)
       }
