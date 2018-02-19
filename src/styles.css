@@ -11,6 +11,11 @@ body {
   color: var(--default-color-text);
 }
 
+/* sassy mixins work too! */
+@mixin toasty() {
+  background: var(--color-toasty);
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -23,6 +28,11 @@ body {
     &.info-text {
       color: var(--color-confirm) !important;
     }
+  }
+
+  & p.toasty {
+    /* using mixin toasty() */
+    @include toasty();
   }
 
   /* nested @media queries */

@@ -10,12 +10,14 @@ const cssnano = require('cssnano')
 const postcss_import = require('postcss-partial-import')
 const postcss_nesting = require('postcss-nesting')
 const postcss_comments = require('postcss-discard-comments')
+const postcss_sass_mixins = require('postcss-sassy-mixins')
 
 // plugins array
 const plugins = [
                   postcss_import,
                   postcss_nesting,
                   postcss_comments({removeAllButFirst: true}),
+                  postcss_sass_mixins,
                   autoprefixer,
                   mqpacker
                 ]
