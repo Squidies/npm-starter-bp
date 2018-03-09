@@ -24,6 +24,7 @@ npm-starter-bp is an easy to understand, easy to modify boilerplate for building
     * [css-mqpacker](https://github.com/hail2u/node-css-mqpacker): combine like @media queries
     * [cssnano](http://cssnano.co/): CSS minification
     * [postcss-partial-import](https://github.com/jonathantneal/postcss-partial-import): concat @import files
+    * [postcss-sassy-mixins](https://github.com/andyjansson/postcss-sassy-mixins): use SCSS style mixins
     * [postcss-nesting](https://github.com/jonathantneal/postcss-nesting): PostCSS implementation of [CSS Nesting Module lvl3](https://tabatkins.github.io/specs/css-nesting/)
     * [postcss-discard-comments](https://github.com/ben-eb/postcss-discard-comments): Remove comments from output file.
 
