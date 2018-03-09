@@ -8,6 +8,7 @@
   --color-white: rgb(240, 240, 240);
   --color-red: rgb(230, 0, 0);
   --color-green: rgb(0, 230, 0);
+  --color-toast: rgb(218, 184, 57);
   --default-color-text: var(--color-black);
   --default-color-bg: var(--color-white);
   --color-danger: var(--color-red);

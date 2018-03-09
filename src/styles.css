@@ -5,6 +5,11 @@
 /* concatinate modular CSS */
 @import 'css/_vars.css';
 
+/* scss style mixins */
+@mixin toasty() {
+  background: var(--color-toast);
+}
+
 body {
   /* native CSS Custom Properties */
   background: var(--default-color-bg);
@@ -25,6 +30,10 @@ body {
     }
   }
 
+  & .toasty {
+    @include toasty();
+  }
+
   /* nested @media queries */
   @media (min-width: 800px) {
     & p {
@@ -37,7 +46,8 @@ h1 {
   color: var(--color-danger);
 }
 
-/* combine like @media queries into single MQ */
+/* combine like @media queries into single MQ
+  --> view compiled CSS to see combined MQs */
 @media (min-width: 800px) {
   p {
     color: var(--default-color-text);
