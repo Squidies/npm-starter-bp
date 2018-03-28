@@ -40,6 +40,7 @@
     "postcss-discard-comments": "^2.0.4",
     "postcss-nesting": "^4.2.1",
     "postcss-partial-import": "^4.1.0",
+    "postcss-sassy-mixins": "^2.1.0",
     "rollup": "^0.52.2",
     "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-commonjs": "^8.2.6",
